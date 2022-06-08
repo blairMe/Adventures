@@ -1,18 +1,18 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 
-import { BrowserRouter, Router, Route } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <div>
       <NavBar />
-      <BrowserRouter ></BrowserRouter>
-      <Router>
-          <Route exact path="/" element={<NavBar />}/>
-      </Router>
-    </>
+        <Router>
+          <Route exact path="/" />
+        </Router>
+
+    </div>
   );
 }
 
-export default App;
+export default App
